@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'docker run -v /home/pratik/projects/popcorn-frontend:/app/dist --rm pratikgaikwad/${IMAGE}'
+                sh 'docker run -v /home/pratik/projects/popcorn-admin:/app/dist --rm pratikgaikwad/${IMAGE}'
             }
         }
         stage('Remove') {
